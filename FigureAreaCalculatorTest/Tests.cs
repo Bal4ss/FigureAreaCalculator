@@ -63,5 +63,17 @@ namespace FigureAreaCalculatorTest
             var result = _circle.Area();
             Assert.AreEqual(expected, result, 0.0001);
         }
+        
+        [Test]
+        [TestCase(new double[]{ 3, 4, 5 }, true)]
+        [TestCase(new double[]{ 12, 13, 5 }, true)]
+        [TestCase(new double[]{ -12, -13, -5 }, true)]
+        [TestCase(new double[]{ 11, 13, 6 }, false)]
+        public void TriangleIsRightTest(double[] triangleValues, bool expected)
+        {
+            var result = new Triangle(triangleValues[0], triangleValues[1], triangleValues[2])
+                .IsRightTriangle;
+            Assert.AreEqual(expected, result);
+        }
     }
 }
