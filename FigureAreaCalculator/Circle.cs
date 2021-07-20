@@ -14,15 +14,15 @@ namespace FigureAreaCalculator
             _radius = radius;
         }
         
-        public double? Radius
+        public double Radius
         {
-            get => _radius;
+            get => _radius ?? 0;
             set => _radius = value > 0 ? value : -value;
         }
         
         public double Area()
-            => Radius == null
+            => _radius == null
                 ? throw new ArgumentNullException(nameof(Radius))
-                : Math.PI * Radius.Value * Radius.Value;
+                : Math.PI * Radius * Radius;
     }
 }
