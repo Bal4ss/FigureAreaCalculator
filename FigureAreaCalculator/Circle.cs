@@ -16,7 +16,7 @@ namespace FigureAreaCalculator
         /// <param name="radius">Радиус окружности</param>
         public Circle(double radius)
         {
-            _radius = radius;
+            _radius = radius > 0 ? radius : -radius;
         }
         
         /// <summary>
