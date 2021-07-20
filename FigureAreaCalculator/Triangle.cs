@@ -21,6 +21,10 @@ namespace FigureAreaCalculator
         /// <exception cref="AggregateException">Указаны невозможные для треугольника значения сторон</exception>
         public Triangle(double a, double b, double c)
         {
+            a = a < 0 ? -a : a;
+            b = b < 0 ? -b : b;
+            c = c < 0 ? -c : c;
+            
             if (a + b < c || a + c < b || b + c < a)
                 throw new AggregateException("Impossible triangle side lengths");
 
