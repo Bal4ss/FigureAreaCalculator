@@ -29,13 +29,13 @@ namespace FigureAreaCalculatorTest
                     a: incorrectValues[0],
                     b: incorrectValues[1],
                     c: incorrectValues[2]);
-                Assert.Fail("No exception was thrown");
+                Assert.Fail();
             }
             catch (AggregateException ex)
             {
                 Assert.AreEqual(
-                    new AggregateException("Impossible triangle side lengths"),
-                    ex);
+                    "Impossible triangle side lengths",
+                    ex.Message);
             }
         }
 
@@ -53,18 +53,14 @@ namespace FigureAreaCalculatorTest
         }
         
         [Test]
-        [TestCase(0)]
-        [TestCase(4)]
-        [TestCase(5)]
-        [TestCase(-5)]
-        public void CircleAreaTest(double radius)
+        [TestCase(0, 0)]
+        [TestCase(4, 50.26548245743669)]
+        [TestCase(5, 78.53981633974483)]
+        [TestCase(-5, 78.53981633974483)]
+        public void CircleAreaTest(double radius, double expected)
         {
             _circle = new Circle(radius);
             var result = _circle.Area();
-            
-            radius = radius > 0 ? radius : -radius;
-            var expected = Math.PI * radius * radius; // S=πr^2
-            
             Assert.AreEqual(expected, result, 0.0001);
         }
     }
