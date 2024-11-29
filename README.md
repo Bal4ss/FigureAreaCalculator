@@ -40,10 +40,10 @@
 
 <a name="a2"><h3>Ответ 2</h3></a>
 ```
-SELECT Product.Name, Category.Name
-FROM Product
-LEFT JOIN ProductCategory ON Product.Id = ProductCategory.ProductId
-LEFT JOIN Category ON Category.Id = ProductCategory.CategoryId
+SELECT Products.Name AS 'Product name', Category.Name AS 'Category name'
+FROM ProductsCategory
+FULL OUTER JOIN Products ON Products.Id = ProductsCategory.ProductId
+LEFT JOIN Category ON Category.Id = ProductsCategory.CategoryId
 ```
 
 <a name="tools"><h1>Инструменты используемые в ходе работы</h1></a>  
