@@ -1,8 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureAreaCalculator", "FigureAreaCalculator\FigureAreaCalculator.csproj", "{D4B0D6AB-5C1D-4B02-81CB-1737D6555369}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureAreaCalculator", "FigureAreaCalculator\FigureAreaCalculator.csproj", "{CF9D89F9-5701-470E-8841-00CB4BAD6CEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureAreaCalculatorTest", "FigureAreaCalculatorTest\FigureAreaCalculatorTest.csproj", "{F811CA32-4AE6-495F-A8FD-3F159F93CDC0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C9D05156-EC09-4029-813C-C7AF15DD5C70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureAreaCalculator.Test", "FigureAreaCalculator.Test\FigureAreaCalculator.Test.csproj", "{64708EBC-CBB4-4AC1-A213-7B9EEDD8F0A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureAreaCalculator.Core", "FigureAreaCalculator.Core\FigureAreaCalculator.Core.csproj", "{6268D103-FBD3-426F-926F-B92DE7989F08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,13 +14,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D4B0D6AB-5C1D-4B02-81CB-1737D6555369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D4B0D6AB-5C1D-4B02-81CB-1737D6555369}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D4B0D6AB-5C1D-4B02-81CB-1737D6555369}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D4B0D6AB-5C1D-4B02-81CB-1737D6555369}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F811CA32-4AE6-495F-A8FD-3F159F93CDC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F811CA32-4AE6-495F-A8FD-3F159F93CDC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F811CA32-4AE6-495F-A8FD-3F159F93CDC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F811CA32-4AE6-495F-A8FD-3F159F93CDC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF9D89F9-5701-470E-8841-00CB4BAD6CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF9D89F9-5701-470E-8841-00CB4BAD6CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF9D89F9-5701-470E-8841-00CB4BAD6CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF9D89F9-5701-470E-8841-00CB4BAD6CEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64708EBC-CBB4-4AC1-A213-7B9EEDD8F0A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64708EBC-CBB4-4AC1-A213-7B9EEDD8F0A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64708EBC-CBB4-4AC1-A213-7B9EEDD8F0A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64708EBC-CBB4-4AC1-A213-7B9EEDD8F0A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6268D103-FBD3-426F-926F-B92DE7989F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6268D103-FBD3-426F-926F-B92DE7989F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6268D103-FBD3-426F-926F-B92DE7989F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6268D103-FBD3-426F-926F-B92DE7989F08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64708EBC-CBB4-4AC1-A213-7B9EEDD8F0A4} = {C9D05156-EC09-4029-813C-C7AF15DD5C70}
 	EndGlobalSection
 EndGlobal
